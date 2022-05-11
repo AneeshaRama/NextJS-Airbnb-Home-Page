@@ -1,9 +1,14 @@
 import React from "react";
+import Banner from "../components/Banner";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
     <>
-      <h1 className="text-2xl text-green-400">I am home page</h1>
+      {/* Header */}
+      <Header />
+      {/* Banner */}
+      <Banner />
     </>
   );
 };
