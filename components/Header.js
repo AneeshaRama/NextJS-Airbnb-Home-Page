@@ -5,7 +5,6 @@ import {
   GlobeAltIcon,
   MenuIcon,
   UserCircleIcon,
-  UsersIcon,
 } from "@heroicons/react/solid";
 
 const Header = () => {
