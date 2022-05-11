@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
+import Mediumcard from "../components/Mediumcard";
 import Smallcard from "../components/Smallcard";
 
 const Home = ({ exploreData, cardData }) => {
@@ -27,6 +28,11 @@ const Home = ({ exploreData, cardData }) => {
           <h2 className="text-4xl font-semibold text-gray-800 py-10">
             Live Anywhere
           </h2>
+          <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
+            {cardData.map((item) => (
+              <Mediumcard key={item.title} item={item} />
+            ))}
+          </div>
         </section>
       </main>
     </>
