@@ -1,11 +1,12 @@
 import React from "react";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Largecard from "../components/Largecard";
 import Mediumcard from "../components/Mediumcard";
 import Smallcard from "../components/Smallcard";
 
 const Home = ({ exploreData, cardData }) => {
-  console.log(exploreData, cardData);
   return (
     <>
       {/* Header */}
@@ -34,7 +35,18 @@ const Home = ({ exploreData, cardData }) => {
             ))}
           </div>
         </section>
+        <div>
+          <Largecard
+            img="http://links.papareact.com/4cj"
+            title="The Greatest Outdoors"
+            description="Whishlists Curated by Airbnb"
+            buttonText="Get Inspired"
+          />
+        </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
